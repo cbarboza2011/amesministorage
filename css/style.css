@@ -57,19 +57,26 @@ body {
 /* HEADER */
 #address {
   line-height: 4vh;
-  padding: 3vh 0 1vh;
+  padding-top: 3vh;
   font-size: 2.5vh;
   letter-spacing: .25vw;
 }
 
 /* SLIDESHOW */
-#slideshow {
+.big-slideshow {
+  display: none!important;
+}
+
+.slideshow {
   width: 100%;
-  height: 50vh;
 }
 
 .slide {
-  width: 100%;
+  width: 100%!important;
+  height: 100%!important;
+  background-position: center!important;
+  background-size: contain!important;
+  background-repeat: no-repeat!important;
 }
 
 .slide img {
@@ -81,9 +88,25 @@ body {
     align-items: center;
 }
 
+#slide1 {
+  background: url("../images/Need Space.jpg");
+}
+
+#slide2 {
+  background: url("../images/Open Lot.jpg");
+}
+
+#slide3 {
+  background: url("../images/IMG_0713a.jpg");
+}
+
+#slide4 {
+  background: url("../images/IMG_0714a.jpg");
+}
+
 /* FEATURES */
 #features div {
-  margin: 5vw;
+  margin:0 5vw 5vw;
   padding-bottom: .5vh;
   font-weight: bolder;
   font-size: 2.5vh;
@@ -92,14 +115,18 @@ body {
 }
 
 /* TEXT */
-#description p, #units p {
+#description p, #pricing p {
   margin: 0 2vw;
   line-height: 3vh;
 }
 
-#units p {
+#pricing p {
   font-size: 2vh;
   font-style: italic;
+}
+
+#pricing img {
+  margin: 1vh 0;
 }
 
 /* CONTRACT BUTTON */
@@ -129,13 +156,29 @@ footer a {
     margin: 0 auto;
   }
 
-  .slide img {
-    /* height: 100%; */
-    width: 100%;
+  .small-slideshow {
+    display: none!important;
+  }
+
+  .big-slideshow {
+    display: block!important;
+  }
+
+  .slide {
+    width: auto;
   }
 
   .slick-initialized .slick-track {
     height: 50vh;
+  }
+
+  #features div {
+    margin: 0 5vh 4vh;
+  }
+
+  #description p, #units p {
+    margin: 0 2vw;
+    line-height: 3vh;
   }
 
   #contract button[type=submit] {

@@ -8,7 +8,7 @@ $(document).ready(function() {
   });
 
 
-  $('#slideshow').slick({
+  $('.slideshow').slick({
     dots: false,
     infinite: true,
   	speed: 1000,
