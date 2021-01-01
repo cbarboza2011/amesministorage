@@ -118,6 +118,7 @@ body {
 #description p, #pricing p {
   margin: 0 2vw;
   line-height: 3vh;
+  letter-spacing: .1vw;
 }
 
 #pricing p {
@@ -178,7 +179,7 @@ footer a {
 
   #description p, #units p {
     margin: 0 2vw;
-    line-height: 3vh;
+    line-height: 3.5vh;
   }
 
   #contract button[type=submit] {
